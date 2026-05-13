@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление операции</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Добавление операции</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="add.html">Добавить операцию</a>
+    <a href="stats.html">Статистика</a>
+</nav>
+
+<main>
+    <form id="finance-form">
+
+        <label>Сумма:</label>
+        <input type="number" id="amount" required>
+
+        <label>Категория:</label>
+        <select id="category">
+            <option>Продукты</option>
+            <option>Транспорт</option>
+            <option>Зарплата</option>
+        </select>
+
+        <label>Тип операции:</label>
+        <select id="type">
+            <option value="income">Доход</option>
+            <option value="expense">Расход</option>
+        </select>
+
+        <button type="submit">Сохранить</button>
+    </form>
+
+    <p id="message"></p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
